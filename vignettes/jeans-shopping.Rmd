@@ -1,0 +1,53 @@
+---
+title: "Shopping for the Perfect Pair of Jeans"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{jeans-shopping}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+  % \VignetteDepends{tidyverse}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  message = FALSE,
+  warning = FALSE,
+  fig.retina = 3
+)
+```
+
+```{r setup}
+library(jeans)
+library(tidyverse)
+```
+
+This is a demo vignette for the talk ["Teaching Data Sharing through R Data Packages
+"](https://reg.rainfocus.com/flow/posit/positconf25/attendee-portal/page/sessioncatalog/session/1745351601595001ahnQ), given at posit::conf(2025).   
+
+Let's start by comparing the prices of the jeans.  
+
+
+```{r fig.width=7}
+
+jeans |> 
+  ggplot(mapping = aes(x = fct_reorder(name, cost), y = cost)) +
+  geom_col(fill = "#1A1A1A") +
+  labs(title = "Jean Prices",
+       x = "Jean Names", y = "Cost") +
+  theme_minimal()
+```
+
+
+What is the relationship between the inseam and the leg opening?
+
+```{r fig.width=7}
+ggplot(data = jeans, mapping = aes(x = leg_opening, y = inseam)) +
+  geom_point(alpha = 0.6, size = 4, color = "#394652") + 
+  labs(title = "The longer in the inseam, the wider the leg.",
+       x = "Leg Opening (in inches)", 
+       y = "Inseam (in inches)") +
+  theme_minimal()
+```
+

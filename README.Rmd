@@ -1,0 +1,40 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# jeans
+
+The goal of `jeans` is to make jeans shopping easier but providing a tidy dataset of several jeans you can buy from [Anthropologie](https://www.anthropologie.com/).
+
+
+## Installation
+
+You can install the development version of jeans from [GitHub](https://github.com/mcconvil/jeans) with:
+
+``` r
+# install.packages("pak")
+pak::pak("mcconvil/jeans")
+```
+
+## Example
+
+This is a basic example which shows you how to solve a common problem:
+
+```{r example}
+library(jeans)
+# Cheapest pair of jeans
+jeans |>
+  dplyr::slice_min(order_by = cost)
+```
+

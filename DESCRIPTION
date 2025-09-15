@@ -1,0 +1,18 @@
+Package: jeans
+Title: A Dataset of Jeans Available on Anthropologie's Website
+Version: 0.0.0.9000
+Authors@R: 
+    person("Kelly", "McConville", , "k.mcconville@bucknell.edu", role = c("aut", "cre"))
+Description: This is a demo R data package for the talk "Teaching Data Sharing through R Data Packages" given at posit::conf(2025).
+License: GPL (>= 3)
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
+Depends: 
+    R (>= 3.5)
+LazyData: true
+Suggests: 
+    knitr,
+    rmarkdown,
+    tidyverse
+VignetteBuilder: knitr
