@@ -15,21 +15,21 @@ knitr::opts_chunk$set(
 
 # jeans
 
-The goal of `jeans` is to make jeans shopping easier but providing a tidy dataset of several jeans you can buy from [Anthropologie](https://www.anthropologie.com/).
+The goal of `jeans` is to make jeans shopping easier and less stressful by providing a tidy dataset of several jeans you can purchase online from [Anthropologie](https://www.anthropologie.com/).
 
 
 ## Installation
 
-You can install the development version of jeans from [GitHub](https://github.com/mcconvil/jeans) with:
+You can install the development version of `jeans` from [GitHub](https://github.com/mcconvil/jeans) with:
 
-``` r
+```{r}
 # install.packages("pak")
 pak::pak("mcconvil/jeans")
 ```
 
 ## Example
 
-This is a basic example which shows you how to solve a common problem:
+Here's a simple example where we are determining the least expensive pair of jeans in the dataset.
 
 ```{r example}
 library(jeans)
@@ -37,4 +37,6 @@ library(jeans)
 jeans |>
   dplyr::slice_min(order_by = cost)
 ```
+
+
 

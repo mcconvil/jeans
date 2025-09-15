@@ -3,23 +3,32 @@
 
 # jeans
 
-The goal of `jeans` is to make jeans shopping easier but providing a
-tidy dataset of several jeans you can buy from
-[Anthropologie](https://www.anthropologie.com/).
+The goal of `jeans` is to make jeans shopping easier and less stressful
+by providing a tidy dataset of several jeans you can purchase online
+from [Anthropologie](https://www.anthropologie.com/).
 
 ## Installation
 
-You can install the development version of jeans from
+You can install the development version of `jeans` from
 [GitHub](https://github.com/mcconvil/jeans) with:
 
 ``` r
 # install.packages("pak")
 pak::pak("mcconvil/jeans")
+#> 
+#> → Will update 1 package.
+#> → Will download 1 package with unknown size.
+#> + jeans 0.0.0.9000 → 0.0.0.9000 👷🏻‍♀️🔧 ⬇ (GitHub: a2fc897)
+#> ℹ Getting 1 pkg with unknown size
+#> ✔ Cached copy of jeans 0.0.0.9000 (source) is the latest build
+#> ✔ Installed jeans 0.0.0.9000 (github::mcconvil/jeans@a2fc897) (17ms)
+#> ✔ 1 pkg: upd 1 [1.9s]
 ```
 
 ## Example
 
-This is a basic example which shows you how to solve a common problem:
+Here’s a simple example where we are determining the least expensive
+pair of jeans in the dataset.
 
 ``` r
 library(jeans)
