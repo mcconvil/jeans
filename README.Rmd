@@ -13,6 +13,10 @@ knitr::opts_chunk$set(
 )
 ```
 
+# Demo R Data Package
+
+Disclaimer: This is the skeleton of an `R` data package used in the talk ["Teaching Data Sharing with `R` Data Packages"](https://mcconvil.github.io/r-data-package-talk-f25/data_packages_talk).  This is not a fully fleshed out package.  
+
 # jeans
 
 The goal of `jeans` is to make jeans shopping easier and less stressful by providing a tidy dataset of several jeans you can purchase online from [Anthropologie](https://www.anthropologie.com/).

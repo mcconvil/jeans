@@ -1,6 +1,13 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
+# Demo R Data Package
+
+Disclaimer: This is the skeleton of an `R` data package used in the talk
+[“Teaching Data Sharing with `R` Data
+Packages”](https://mcconvil.github.io/r-data-package-talk-f25/data_packages_talk).
+This is not a fully fleshed out package.
+
 # jeans
 
 The goal of `jeans` is to make jeans shopping easier and less stressful
@@ -16,13 +23,17 @@ You can install the development version of `jeans` from
 # install.packages("pak")
 pak::pak("mcconvil/jeans")
 #> 
-#> → Will update 1 package.
+#> → Will install 1 package.
 #> → Will download 1 package with unknown size.
-#> + jeans 0.0.0.9000 → 0.0.0.9000 👷🏻‍♀️🔧 ⬇ (GitHub: a2fc897)
+#> + jeans   0.0.0.9000 👷🏾🔧 ⬇ (GitHub: 1f8d410)
 #> ℹ Getting 1 pkg with unknown size
-#> ✔ Cached copy of jeans 0.0.0.9000 (source) is the latest build
-#> ✔ Installed jeans 0.0.0.9000 (github::mcconvil/jeans@a2fc897) (17ms)
-#> ✔ 1 pkg: upd 1 [1.9s]
+#> ✔ Got jeans 0.0.0.9000 (source) (38.96 kB)
+#> ℹ Packaging jeans 0.0.0.9000
+#> ✔ Packaged jeans 0.0.0.9000 (337ms)
+#> ℹ Building jeans 0.0.0.9000
+#> ✔ Built jeans 0.0.0.9000 (432ms)
+#> ✔ Installed jeans 0.0.0.9000 (github::mcconvil/jeans@1f8d410) (13ms)
+#> ✔ 1 pkg: added 1, dld 1 (NA B) [6.9s]
 ```
 
 ## Example
